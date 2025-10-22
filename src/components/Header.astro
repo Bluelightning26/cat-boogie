@@ -4,13 +4,17 @@ import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
+
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 150px; border: 0; width: 150px; z-index: 999;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
+
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Overview</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
+
 		<div class="social-links">
 			<a href="https://github.com/withastro/astro" target="_blank">
 				<span class="sr-only">Go to Astro's GitHub repo</span>
@@ -22,6 +26,7 @@ import HeaderLink from './HeaderLink.astro';
 				>
 			</a>
 		</div>
+
 	</nav>
 </header>
 <style>
