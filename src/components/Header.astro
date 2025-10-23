@@ -1,14 +1,21 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import OrpheusFlag from '../assets/orpheus-flag.svg';
 ---
 
 <header>
 
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 150px; border: 0; width: 150px; z-index: 999;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
 
+		<OrpheusFlag
+			style="position: absolute; top: -40; left: 150px; width: 150px; z-index: 999; border: 0;"
+			role="img"
+			href="https://hackclub.com"
+			target="_blank"
+			aria-label="Hack Club"
+		/>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Overview</HeaderLink>
