@@ -4,7 +4,6 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import indexImage from '../assets/workshop-home.png';
 ---
 
 <!doctype html>
@@ -17,7 +16,7 @@ import indexImage from '../assets/workshop-home.png';
 		<main>
 			<h1 style="display:inline-block; white-space:nowrap; margin-left:-12px; margin-right:-12px;">Build Your Own Workshop!</h1>
 			<em>Get your members and other clubs around the world shipping more projects!</em>
-			<img src={indexImage} alt="Image of a workshop" loading="lazy" decoding="async" />
+			<img src="/workshop-image.png" alt="Image of a workshop" />
 
 			<h3>Ever wanted to...</h3>
 				<b style="text-align:center;">Create your own ysws? Get more flexibility? Help others get creative?</b>
