@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Club Fund';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
+export const REPOSITORY_URL = 'https://github.com/bluelightning26/cat-boogie'

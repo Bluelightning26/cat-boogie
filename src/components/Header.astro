@@ -1,5 +1,5 @@
 ---
-import { SITE_TITLE } from '../consts';
+import {REPOSITORY_URL, SITE_TITLE} from '../consts';
 import HeaderLink from './HeaderLink.astro';
 import OrpheusFlag from '../assets/orpheus-flag.svg';
 ---
@@ -23,7 +23,7 @@ import OrpheusFlag from '../assets/orpheus-flag.svg';
 		</div>
 
 		<div class="social-links">
-			<a href="https://github.com/withastro/astro" target="_blank">
+			<a href={REPOSITORY_URL} target="_blank">
 				<span class="sr-only">Go to Astro's GitHub repo</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
